@@ -19,7 +19,7 @@ class _MediaListState extends State<MediaList>
   void loadMovies() async
   {
     var movies = await HttpHandler().fetchMovies();
-    setState(() {
+    setState((){
       _media.addAll(movies);
     });
   }
